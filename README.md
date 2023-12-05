@@ -28,3 +28,6 @@ VMCS do not really have limits for number of sensors and number of GPIOs, since 
 
 Your measurements would basically been took by sensors, with analog or digital interface. If it's analog, you'll need to use an ADC to convert measures to numerical values, and send it to the computer through the desired interface. But you can also use the built-in ADC of the computer's Jack port for example, if you have only one sensor.
 Nevertheless, you may need to power up your sensor(s). This can be done by a power regulation stage, but you must be very careful that the power can't damage the used computer port, if the interface method isn't wireless.
+
+
+## Speed
