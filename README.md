@@ -20,6 +20,7 @@ You basically have a computer, on which runs VMCS (what is only a GUI). Then, yo
 The only issue is that you'll have to find a way to control your system by the way you choose, through python, if the way you choose haven't been already described in the project resources. This is because, if you create your own measurement and control system, you'll have to write a little python file where gonna be the instructions to get the measures and/or controlling the actuators. Of course, this project is expected to become a collaborative project, where realised systems can be shared. So you could find ready-to-use systems if one already correspond to your needs.
 
 VMCS do not really have limits for number of sensors and number of GPIOs, since the GUI shall adapt its layout depending on the given number of sensors and accessible GPIOs in the python program. As you can see below, here is a standard application for VMCS, but you can also put external signals on the GPIOs to control VMCS and start a record for example. You can also choose another interface to communicate with an external GPIO board.
+
 ![SchemVMCS](https://github.com/B137P107/VMCS/assets/90220128/ec387962-d1fc-4e69-8b0a-8cb1f4c35e2e)
 
 
