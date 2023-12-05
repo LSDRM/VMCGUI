@@ -1,7 +1,8 @@
 VMCS : Versatile Measurement and Control Software
 ============
 
-VMCS is a Graphical User Interface usable with various measurement and control systems, such as Arduino-based or RaspberryPi-based for example, or homemade ones. The aim of it is to allow acquiring and plotting real-time datas from any measurement and control device(s), by a standard computer. This project describe some ways of using the tool, but the latter have been thought to allow anyone of programming very easily any "kit" under python for desired applications. Then, you can build your own system and connect it to a computer where VMCS is running, to plot your measures from the sensors present in the system, and/or control actuators. The main objective of this project is to give an all-in-one solution while enlarging possibilities with measurement and control prototypes, on experimental benches for example.
+VMCS is a PyQt-based Graphical User Interface usable with various measurement and control systems, such as Arduino-based or RaspberryPi-based for example, or homemade ones. The aim of it is to allow acquiring and plotting real-time datas from any measurement and control device(s), by a standard computer. This project describe some ways of using the tool, but the latter have been thought to allow anyone of programming very easily any "kit" under python for desired applications. Then, you can build your own system and connect it to a computer where VMCS is running, to plot your measures from the sensors present in the system, and/or control actuators. The main objective of this project is to give an all-in-one solution while enlarging possibilities with measurement and control prototypes, on experimental benches for example.
+> DISCLAIMER : This software stills a prototype and can encouter some bugs, or programming mistakes. I personnaly encourage python-skilled programmers to try giving more proper versions or letting me know of issues that could be improved.
 
 -----------
 How does it work ?
@@ -26,8 +27,13 @@ VMCS do not really have limits for number of sensors and number of GPIOs, since 
 
 ### Measurement
 
-Your measurements would basically been took by sensors, with analog or digital interface. If it's analog, you'll need to use an ADC to convert measures to numerical values, and send it to the computer through the desired interface. But you can also use the built-in ADC of the computer's Jack port for example, if you have only one sensor.
-Nevertheless, you may need to power up your sensor(s). This can be done by a power regulation stage, but you must be very careful that the power can't damage the used computer port, if the interface method isn't wireless.
+Your measurements would basically been took by sensors, with analog or digital interface. If it's analog, you'll need to use an ADC to convert measures to numerical values, and send it to the computer through the desired interface. But you can also use the built-in ADC of the computer's Jack port for example, if you have only one sensor. Then, measurements gonna be called by the "kit" python program, to get plotted in the VMCS GUI.
+> You may need to power up your sensor(s). This can be done by a power regulation stage, but you must be very careful that the power can't damage the used computer port, if the interface method isn't wireless.
 
+### Control
 
-## Speed
+Here, the control word refer to controlling external devices, or controlling the VMCS interface. In most of cases, controlling things gonna be done by controlling GPIOs. Those GPIOs can be integrated on the acquisition board, or being connected to the computer through another interface from the one for the acquisition board. Controlling external devices could also be done without GPIOs, by interfacing direcly actuators to the computer. Because VMCS is an all-in-one solution, including measurement and control in a single interface, controlling external devices could be done depending on the measurement values.
+
+----------
+Speed rates
+----------
