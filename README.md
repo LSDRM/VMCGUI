@@ -37,3 +37,14 @@ Here, the control word refer to controlling external devices, or controlling the
 ----------
 Speed rates
 ----------
+
+Ultimately, VMCS is intended to being able to plot datas with a very high time-resolution, up to the fastest existing devices such as 10 GSPS ADC, which means a sample every 0.1 ns. But, for now, since graphs plotted in VMCS are using DateAxisItem from the pyqtgraph package, the maximum resolution is the one of timestamp, which is used in the DateAxisItem. The timestamp resolution is about 1 µs.
+Another point is that, VMCS works currently in a 1-by-1 sample mode, and between each sample there is a loop to plot the last one taken. This loop is pretty long because python is a slow to update each graph, and the travelling data through the interface connection can be very slow too. To give an order, this loop has been measured at about 400 ms between each sample with the first version of the _DualPressure - Thermocouple_ kit. This kit was using an UART protocol with RS485 standard interface 10 meters long between the computer and the acquisition board, using the following devices and parameters :
+- a USB to UART bridge (FT231XS) ;
+- two RS485 transceivers, at both ends of the interface (MAX14840) ;
+- a 24 bits ADC with a sample rate of 2000 SPS (ADS122U04) ;
+- 3 analog sensors ;
+- a 9600 baud rate on communication line ;
+- with 102 bytes exchanged per loop between the computer and the acquisition board, neglecting the usage of GPIOs integrated to the ADC.
+
+Then, we can calculate that the data exchange on the line contribute for $102\times 8\times 1/9600 = 85\ ms$ per loop theorically. This means that the approximative rest of about 315 ms is due to the execution of pythons instructions.
