@@ -47,4 +47,8 @@ Another point is that, VMCS works currently in a 1-by-1 sample mode, and between
 - a 9600 baud rate on communication line ;
 - with 102 bytes exchanged per loop between the computer and the acquisition board, neglecting the usage of GPIOs integrated to the ADC.
 
-Then, we can calculate that the data exchange on the line contribute for $102\times 8\times 1/9600 = 85\ ms$ per loop theorically. This means that the approximative rest of about 315 ms is due to the execution of pythons instructions.
+Then, we can calculate that the data exchange on the line contribute for $102\times 8\times 1/9600 = 85\ ms$ per loop theorically. This means that the approximative rest of about 315 ms is due to the execution of pythons instructions. So the lever to improve the speed rate of the system, is to minimizing the number of instructions per sample update. To perform this, we can consider acquiring multiple samples in a row without asking for each sample, but instead asking for a quantity N of samples. Then, the plot(s) in VMCS shall update by bursts of N samples, each separated by the used conversion rate of the ADC.
+
+----------
+Some examples of use
+----------
