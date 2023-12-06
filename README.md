@@ -20,21 +20,21 @@ You basically have a computer, on which runs VMCS (what is only a GUI). Then, yo
 - HDMI
 - etc...
 
-The only issue is that you'll have to find a way to control your system by the way you choose, through python, if the way you choose haven't been already described in the project resources. This is because, if you create your own measurement and control system, you'll have to write a little python file where gonna be the instructions to get the measures and/or controlling the actuators. Of course, this project is expected to become a collaborative project, where realised systems can be shared. So you could find ready-to-use systems if one already correspond to your needs.
+The only issue is that you'll have to find a way to control your system by the way you choose, through python, if the way you choose haven't been already described in the project resources. This is because, if you create your own measurement and control system, you'll have to write a python file where gonna be the instructions to get the measures and/or controlling the actuators. In short, this python file will make the link between VMCS and your system, through the desired communication port. Of course, this project is expected to become a collaborative project, where realised systems can be shared. So you could find ready-to-use systems if one already correspond to your needs.
 
-VMCS do not really have limits for number of sensors and number of GPIOs, since the GUI shall adapt its layout depending on the given number of sensors and accessible GPIOs in the python program. As you can see below, here is a standard application for VMCS, but you can also put external signals on the GPIOs to control VMCS and start a record for example. You can also choose another interface to communicate with an external GPIO board.
+VMCS do not really have limits for number of sensors and number of GPIOs, since the GUI shall adapt its layout depending on the given number of sensors and accessible GPIOs in the python program. As you can see below, here is a standard application for VMCS, but you can also put external signals on the GPIOs to control VMCS and start a record for example. You can also choose another communication port to communicate with an external GPIO board.
 
 ![SchemVMCS](https://github.com/B137P107/VMCS/assets/90220128/ec387962-d1fc-4e69-8b0a-8cb1f4c35e2e)
 
 
 ### Measurement
 
-Your measurements would basically been took by sensors, with analog or digital interface. If it's analog, you'll need to use an ADC to convert measures to numerical values, and send it to the computer through the desired interface. But you can also use the built-in ADC of the computer's Jack port for example, if you have only one sensor. Then, measurements gonna be called by the "kit" python program, to get plotted in the VMCS GUI.
-> You may need to power up your sensor(s). This can be done by a power regulation stage, but you must be very careful that the power can't damage the used computer port, if the interface method isn't wireless.
+Your measurements would basically been took by sensors, with analog or digital output. If it's analog, you'll need to use an ADC to convert measures to numerical values, and send it to the computer through the desired protocol/communication port. But you can also use the built-in ADC of the computer's Jack port for example, if you have only one sensor. Then, measurements gonna be called by the "kit" python program, to get plotted in the VMCS GUI.
+> You may need to power up your sensor(s). This can be done by a power regulation stage, but you must be very careful that the power can't damage the used computer port, if the communication method isn't wireless.
 
 ### Control
 
-Here, the control word refer to controlling external devices, or controlling the VMCS interface. In most of cases, controlling things gonna be done by controlling GPIOs. Those GPIOs can be integrated on the acquisition board, or being connected to the computer through another interface from the one for the acquisition board. Controlling external devices could also be done without GPIOs, by interfacing direcly actuators to the computer. Because VMCS is an all-in-one solution, including measurement and control in a single interface, controlling external devices could be done depending on the measurement values.
+Here, the control word refer to controlling external devices, or controlling the VMCS interface. In most of cases, controlling things gonna be done by controlling GPIOs. Those GPIOs can be integrated on the acquisition board, or being connected to the computer through another communication method from the one of the acquisition board. Controlling external devices could also be done without GPIOs, by interfacing direcly actuators to the computer, through a serial port for example. Because VMCS is an all-in-one solution including measurement and control in a single interface, controlling external devices could be done depending on the measurement values.
 
 ----------
 Speed rates
@@ -53,7 +53,14 @@ Then, we can calculate that the data exchange on the line contribute for $102\ti
 
 ![FrameExample_SpeedVMCS](https://github.com/B137P107/VMCS/assets/90220128/39207165-092f-4367-8cf9-02612f43396d)
 
+----------
+Recording measurements and data processing
+----------
 
 ----------
 Some examples of use
+----------
+
+----------
+Compatibility
 ----------
