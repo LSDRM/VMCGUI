@@ -27,12 +27,14 @@ VMCS do not really have limits for number of sensors and number of GPIOs, since 
 ![SchemVMCS](https://github.com/B137P107/VMCS/assets/90220128/ec387962-d1fc-4e69-8b0a-8cb1f4c35e2e)
 
 
-### Measurement
+Measurement
+---------
 
 Your measurements would basically been took by sensors, with analog or digital output. If it's analog, you'll need to use an ADC to convert measures to numerical values, and send it to the computer through the desired protocol/communication port. But you can also use the built-in ADC of the computer's Jack port for example, if you have only one sensor. Then, measurements gonna be called by the "kit" python program, to get plotted in the VMCS GUI.
 > You may need to power up your sensor(s). This can be done by a power regulation stage, but you must be very careful that the power can't damage the used computer port, if the communication method isn't wireless.
 
-### Control
+Control
+---------
 
 Here, the control word refer to controlling external devices, or controlling the VMCS interface. In most of cases, controlling things gonna be done by controlling GPIOs. Those GPIOs can be integrated on the acquisition board, or being connected to the computer through another communication method from the one of the acquisition board. Controlling external devices could also be done without GPIOs, by interfacing direcly actuators to the computer, through a serial port for example. Because VMCS is an all-in-one solution including measurement and control in a single interface, controlling external devices could be done depending on the measurement values.
 
