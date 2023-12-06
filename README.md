@@ -1,6 +1,8 @@
 VMCS : Versatile Measurement and Control Software
 ============
 
+![VMCSdebugWindow](https://github.com/B137P107/VMCS/assets/90220128/5fc31e9e-dd4f-44cd-b660-4364e199c9c1)
+
 VMCS is a PyQt-based Graphical User Interface usable with various measurement and control systems, such as Arduino-based or RaspberryPi-based for example, or homemade ones. The aim of it is to allow acquiring and plotting real-time datas from any measurement and control device(s), by a standard computer. This project describe some ways of using the tool, but the latter have been thought to allow anyone of programming very easily any "kit" under python for desired applications. Then, you can build your own system and connect it to a computer where VMCS is running, to plot your measures from the sensors present in the system, and/or control actuators. The main objective of this project is to give an all-in-one solution while enlarging possibilities with measurement and control prototypes, on experimental benches for example.
 > DISCLAIMER : This software stills a prototype and can encouter some bugs, or programming mistakes. I personnaly encourage python-skilled programmers to try giving more proper versions or letting me know of issues that could be improved.
 
