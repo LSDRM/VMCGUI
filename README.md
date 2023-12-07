@@ -1,7 +1,8 @@
 VMCGUI : Versatile Measurement and Control GUI
 ============
 
-![VMCSdebugWindow](https://github.com/B137P107/VMCS/assets/90220128/5fc31e9e-dd4f-44cd-b660-4364e199c9c1)
+![VMCGUIdebugWindow](https://github.com/LSDRM/VMCGUI/assets/90220128/dec16cbf-e683-49de-94b1-37517d74c975)
+
 
 VMCGUI is a PyQt-based Graphical User Interface usable with various measurement and control systems, such as Arduino-based or RaspberryPi-based for example, or homemade ones. The aim of it is to allow acquiring and plotting real-time datas from any measurement and control device(s), by a standard computer. This project describe some ways of using the tool, but the latter have been thought to allow anyone of programming very easily any "kit" under python for desired applications. Then, you can build your own system and connect it to a computer where VMCGUI is running, to plot your measures from the sensors present in the system, and/or control actuators. The main objective of this project is to give an all-in-one solution while enlarging possibilities with measurement and control prototypes, on experimental benches for example.
 > DISCLAIMER : This software still a prototype and can encouter some bugs, or programming mistakes. I personnaly encourage python-skilled programmers to try giving more proper versions or letting me know of issues that could be improved.
@@ -33,8 +34,7 @@ The only issue is that you'll have to find a way to control your system by the w
 
 VMCGUI do not really have limits for number of sensors and number of GPIOs, since the GUI shall adapt its layout depending on the given number of sensors and accessible GPIOs in the python program. As you can see below, here is a standard application for VMCGUI, but you can also put external signals on the GPIOs to control VMCGUI and start a record for example. You can also choose another communication port to communicate with an external GPIO board.
 
-![SchemVMCS](https://github.com/B137P107/VMCS/assets/90220128/ec387962-d1fc-4e69-8b0a-8cb1f4c35e2e)
-
+![SchemVMCGUI](https://github.com/LSDRM/VMCGUI/assets/90220128/94628862-4fd2-4fd5-8ba4-6a6e3a3556e8)
 
 Measurement
 ---------
@@ -62,7 +62,7 @@ Another point is that, when VMCGUI works in a 1-by-1 sample mode, a loop is exec
 
 Then, we can calculate that the data exchange on the line contribute for $102\times 8\times 1/9600 = 85\ ms$ per loop theorically. This means that the approximative rest of about 315 ms is due to the execution of pythons instructions. So the lever to improve the speed rate of the system, is to minimizing the number of python instructions per sample update. To perform this, we can consider acquiring multiple samples in a row without asking for each sample, and instead asking for a quantity N of samples. Then, the plot(s) in VMCGUI shall update by bursts of N samples, each separated by the used conversion rate of the ADC. In the figure below, I provide an example of an UART frame from the computer in N-by-N mode (using a USB to UART bridge or other), asking for N samples to the acquisition board. Because there is more than 1 sensor on the acquisition board, the ADC will need to switch from the first to the second sensor. This is usually performed by rewriting a register in the ADC, which need to send another frame to the ADC. Because we don't want to send too much frame from the VMCGUI (which is python-based and slow), we may use a microcontroller between the computer and the ADC, that be in charge of sending those switching sensor frame.
 
-![FrameExample_SpeedVMCS](https://github.com/B137P107/VMCS/assets/90220128/39207165-092f-4367-8cf9-02612f43396d)
+![FrameExample_SpeedVMCGUI](https://github.com/LSDRM/VMCGUI/assets/90220128/02528a34-c2c1-4371-a49f-7c6ee312eada)
 
 ----------
 Recording measurements and data processing
