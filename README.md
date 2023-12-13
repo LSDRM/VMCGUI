@@ -15,6 +15,8 @@ Features
 - Designed to allow very fast sample rate mode.
 - Usable without or with any communication protocol from the computer.
 - All-in-one solution to correlate control with taken measures.
+- Record real-time measurements at sample rate.
+- Processing recorded measurements.
 
 -----------
 How does it work ?
@@ -60,13 +62,16 @@ Another point is that, when VMCGUI works in a 1-by-1 sample mode, a loop is exec
 - a 9600 baud rate on communication line ;
 - for a total of 102 bytes exchanged per loop between the computer and the acquisition board, neglecting the usage of GPIOs integrated to the ADC.
 
-Then, we can calculate that the data exchange on the line contribute for $102\times 8\times 1/9600 = 85\ ms$ per loop theorically. This means that the approximative rest of about 315 ms is due to the execution of pythons instructions. So the lever to improve the speed rate of the system, is to minimizing the number of python instructions per sample update. To perform this, we can consider acquiring multiple samples in a row without asking for each sample, and instead asking for a quantity N of samples. Then, the plot(s) in VMCGUI shall update by bursts of N samples, each separated by the used conversion rate of the ADC. In the figure below, I provide an example of an UART frame from the computer in N-by-N mode (using a USB to UART bridge or other), asking for N samples to the acquisition board. Because there is more than 1 sensor on the acquisition board, the ADC will need to switch from the first to the second sensor. This is usually performed by rewriting a register in the ADC, which need to send another frame to the ADC. Because we don't want to send too much frame from the VMCGUI (which is python-based and slow), we may use a microcontroller between the computer and the ADC, that be in charge of sending those switching sensor frame.
+Then, we can calculate that the data exchange on the line contribute for $102\times 8\times 1/9600 = 85\ ms$ per loop theorically. This means that the approximative rest of about 315 ms is due to the execution of pythons instructions. So the lever to improve the speed rate of the system, is to minimizing the number of python instructions per sample update. To perform this, we can consider acquiring multiple samples in a row without asking for each sample, and instead asking for a quantity N of samples. Then, the plot(s) in VMCGUI shall update by bursts of N samples, each separated by the used conversion rate of the ADC. In the figure below, I provide an example of an UART frame from the computer in N-by-N mode (using a USB to UART bridge or other), asking for N samples to the acquisition board. Because there is more than 1 sensor on the acquisition board, the ADC will need to switch from the first to the second sensor. This is usually performed by rewriting a register in the ADC, which need to send another frame to the ADC. Because we don't want to send too much frame from the VMCGUI (which is python-based and slow), we may use a microcontroller between the computer and the ADC, that be in charge of sending those switching sensor frame. In this configuration, the microcontroller must be preprogrammed to understand what it need to do when receiving the frame containing the number N. The preprogramming can be performed on starting VMCGUI in the "kit" python file, or outside VMCGUI using another software (e.g. Arduino IDE for an Arduino-based acquisition board). The used microcontroller can either store all N samples before sending them, or immediatly sending each sample when it acquire it.
 
 ![FrameExample_SpeedVMCGUI](https://github.com/LSDRM/VMCGUI/assets/90220128/02528a34-c2c1-4371-a49f-7c6ee312eada)
 
 ----------
 Recording measurements and data processing
 ----------
+
+VMCGUI provide a recording solution to store your measurements in files. Once recorded, you can reopen and plot your datas to generate SVG, matplotlib, CSV,... files and graphs.
+> Math operations between plots are also possibles but still in debugging process.
 
 ----------
 Some examples of use
