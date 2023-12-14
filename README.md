@@ -4,7 +4,7 @@ VMCGUI : Versatile Measurement and Control GUI
 ![VMCGUIdebugWindow](https://github.com/LSDRM/VMCGUI/assets/90220128/dec16cbf-e683-49de-94b1-37517d74c975)
 
 
-VMCGUI is a PyQt-based Graphical User Interface usable with various measurement and control systems, such as Arduino-based or RaspberryPi-based for example, or homemade ones. The aim of it is to allow acquiring and plotting real-time datas from any measurement and control device(s), by a standard computer. This project describe some ways of using the tool, but the latter have been thought to allow anyone of programming very easily any "kit" under python for desired applications. Then, you can build your own system and connect it to a computer where VMCGUI is running, to plot your measures from the sensors present in the system, and/or control actuators. The main objective of this project is to give an all-in-one solution while enlarging possibilities with measurement and control prototypes, on experimental benches for example.
+VMCGUI is a PyQt-based Graphical User Interface usable with various measurement and control systems, such as Arduino-based or RaspberryPi-based for example, or homemade ones. Because we are always reprogramming GUIs to plot our data of each system we conceived, we provide here an interface that can be used with any system, without rewriting the source code. For each system you conceive, you'll have to write a little file containing informations of your system, then VMCGUI shall adapt its layer to your needs. The aim of it is to allow acquiring and plotting real-time datas from any measurement and control device(s), by a standard computer. This project describe some ways of using the tool, but the latter have been thought to allow anyone of programming very easily any "kit" under python for desired applications. Then, you can build your own system and connect it to a computer where VMCGUI is running, to plot your measures from the sensors present in the system, and/or control actuators. The main objective of this project is to give an all-in-one solution while enlarging possibilities with measurement and control prototypes, on experimental benches for example.
 > DISCLAIMER : This software still a prototype and can encouter some bugs, or programming mistakes. I personnaly encourage python-skilled programmers to try giving more proper versions or letting me know of issues that could be improved.
 
 -----------
@@ -71,11 +71,26 @@ Recording measurements and data processing
 ----------
 
 VMCGUI provide a recording solution to store your measurements in files. Once recorded, you can reopen and plot your datas to generate SVG, matplotlib, CSV,... files and graphs.
-> Math operations between plots are also possibles but still in debugging process.
+> Math operations on plots and between plots in the "Load Data" window are also possible but still in debugging process.
 
 ----------
 Some examples of use
 ----------
+
+#### Using an Arduino
+The configuration that may be the most used with VMCGUI is probably using an Arduino connected to the computer through USB. This configuration is probably the most simple to set up, because it don't need complex development of special data acquisition board. You'll only need to connect your sensors and actuators to the Arduino as suggested in the doc of the used sensors and actuators, or in the Arduino's documentation if exists. Then, you'll need to talk to the Arduino through python commands, in the "kit" python file of VMCGUI. This can be performed in a very simple way with the _pyfirmata_ library (see https://realpython.com/arduino-python/).
+![ArduinoVMCGUI](https://github.com/LSDRM/VMCGUI/assets/90220128/c96c5503-698c-4395-bbb2-7d02e16ce7b0)
+
+#### Personnalized acquisition board over long distances
+Since VMCGUI has been firstly developped for almost long distance application (about 10 meters) and highly noisy environment, the main configuration that has been studied is the following one, using UART communication protocol through RS485 or RS422 standards. This configuration permits to embed the acquisition board on a system with difficult accessibility, through wire connections. The "Data Acquisition IC" could be a microcontroller with ADC, or directly an ADC that have UART communication protocol (e.g. ADS122U04 which include GPIOs).
+> Note that in the latter case, with direct connection to an UART ADC, you will not be able to have very fast sample rate with more than one sensor. This is because an ADC will generally need to receive commands to switch its conversion channels between sensors. Then, the N-by-N mode is not possible in this exact configuration.
+
+![VMCGUI_LongDistanceConfiguration](https://github.com/LSDRM/VMCGUI/assets/90220128/cb748075-adc9-4e3e-bb2a-635fa3053f11)
+
+#### Wireless acquisition board
+The previous configuration shows a way to embed acquisition board on systems at long distance or with difficult accessibility. This configuration state of embeding acquisition board on systems with wireless connection to the computer. Development of such a configuration may be a bit trickier but still a possibility for your system if wireless connection is essential.
+
+![WirelessVMCGUI](https://github.com/LSDRM/VMCGUI/assets/90220128/45908e5b-929a-4879-90e2-334011e7733c)
 
 ----------
 Compatibility
