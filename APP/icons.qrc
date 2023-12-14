@@ -1,0 +1,9 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file alias="REC.png">icons/REC.png</file>
+    <file alias="PAUSE.png">icons/PAUSE.png</file>
+    <file alias="RESUME.png">icons/RESUME.png</file>
+    <file alias="GPIOactive.png">icons/GPIOactive.png</file>
+    <file alias="GPIOinactive.png">icons/GPIOinactive.png</file>
+</qresource>
+</RCC>
