@@ -4,7 +4,7 @@ VMCGUI is a PyQt-based Graphical User Interface usable with various measurement 
 
 ![VMCGUIdebugWindow](https://github.com/LSDRM/VMCGUI/assets/90220128/dec16cbf-e683-49de-94b1-37517d74c975)
 
-> DISCLAIMER : This software still a prototype and can encouter some bugs, or programming mistakes. I personnaly encourage python-skilled programmers to try giving more proper versions or letting me know of issues that could be improved.
+> DISCLAIMER : This software still a prototype and can encouter some bugs, or programming mistakes. I personnaly encourage python-skilled programmers to try giving more proper versions or letting me know about issues that could be fixed.
 
 -----------
 Features
