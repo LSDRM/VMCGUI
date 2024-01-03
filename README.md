@@ -94,3 +94,11 @@ The previous configuration shows a way to embed acquisition board on systems at 
 ----------
 Compatibility
 ----------
+
+For now, VMCGUI has been developped under Windows 10, and has not been tested on Mac and Linux. The app is given as Python source code, so need Python and few libraries to be installed. VMCGUI is reported to works fine with versions :
+- Python 3.11.3
+- pyqtgraph 0.13.3
+- numpy 1.24.3
+- scipy 1.10.1
+- PyQt5 5.15.9
+- PyQtWebEngine 5.15.6
