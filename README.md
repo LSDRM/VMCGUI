@@ -6,6 +6,8 @@ VMCGUI is a PyQt-based Graphical User Interface usable with various measurement 
 
 > DISCLAIMER : This software still a prototype and can encouter some bugs, or programming mistakes. I personnaly encourage python-skilled programmers to try giving more proper versions or letting me know about issues that could be fixed.
 
+# [Link to available kits](https://github.com/LSDRM/VMC_Kits)
+
 -----------
 Features
 -----------
@@ -31,7 +33,7 @@ You basically have a computer, on which runs VMCGUI. Then, you'll have to connec
 - HDMI
 - etc...
 
-The only issue is that you'll have to find a way to control your system by the way you choose, through python, if the way you choose haven't been already described in the project resources. This is because, if you create your own measurement and control system, you'll have to write a python file where gonna be the instructions to get the measures and/or controlling the actuators. In short, this python file will make the link between VMCGUI and your system, through the desired communication port. Of course, this project is expected to become a collaborative project, where realised systems can be shared. So you could find ready-to-use systems if one already correspond to your needs.
+The only issue is that you'll have to find a way to control your system by the way you choose, through python, if the way you choose haven't been already described in the project resources. This is because, if you create your own measurement and control system, you'll have to write a python file where gonna be the instructions to get the measures and/or controlling the actuators. In short, this python file will make the link between VMCGUI and your system, through the desired communication port. Of course, this project is expected to become a collaborative project, where realised systems can be shared. So you could find [ready-to-use systems](https://github.com/LSDRM/VMC_Kits) if one already correspond to your needs.
 
 VMCGUI do not really have limits for number of sensors and number of GPIOs, since the GUI shall adapt its layout depending on the given number of sensors and accessible GPIOs in the python program. As you can see below, here is a standard application for VMCGUI, but you can also put external signals on the GPIOs to control VMCGUI and start a record for example. You can also choose another communication port to communicate with an external GPIO board.
 
