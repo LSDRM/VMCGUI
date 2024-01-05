@@ -1,3 +1,4 @@
-pyrcc5 pour convertir un fichier .qrc contenant les ressources en un fichier python.
+This is useful only to add icons to VMCGUI
+Use pyrcc5 to convert a .qrc file to a .py file
 
-Exemple : pyrcc5 -o resources.py resources.qrc
+Example : pyrcc5 -o resources.py resources.qrc
