@@ -92,6 +92,17 @@ The previous configuration shows one way of integrating the frame grabber on lon
 
 ![WirelessVMCGUI](https://github.com/LSDRM/VMCGUI/assets/90220128/45908e5b-929a-4879-90e2-334011e7733c)
 
+-----------
+Install
+-----------
+
+First of all, make sure you already have installed Python 3.8 at least on your computer. No elaborate compatibility tests have been performed for different python versions with the interface, but I recommend to use versions not too far from the ones given in the next section.
+
+Clone this repository to the folder you want on your computer, then run `pip install -r "C:\...\VMCGUI\APP\requirements.txt"` in the command prompt. Don't forget to replace `C:\...\` by the path where you cloned the current repository.
+> The previous path is given under Windows format, so be sure of using the correct path format if you are not working under Windows.
+
+Now, you can start the interface using python with the following command : `python VMCGUI.py`
+
 ----------
 Compatibility
 ----------
