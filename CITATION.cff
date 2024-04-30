@@ -1,0 +1,32 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: 'VMCGUI : Versatile Measurement and Control GUI'
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Corentin
+    family-names: Coutellier
+    orcid: 'https://orcid.org/0009-0007-9139-4736'
+    affiliation: CEA/DRF/IRAMIS/NIMBE/LSDRM
+repository-code: 'https://github.com/LSDRM/VMCGUI'
+abstract: >-
+  A versatile/modular interface to plot and record data from
+  multiple sensors and control systems.
+keywords:
+  - modular
+  - actuators
+  - centralized
+  - measurements
+  - acquisition
+  - sensors
+  - versatile
+  - instrumentation
+  - interface
+  - command
+  - gpio
+  - control
+license: MIT
