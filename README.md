@@ -98,10 +98,19 @@ Install
 
 First of all, make sure you already have installed Python 3.8 at least on your computer. No elaborate compatibility tests have been performed for different python versions with the interface, but I recommend to use versions not too far from the ones given in the next section.
 
-Clone this repository to the folder you want on your computer, then run `pip install -r "C:\...\VMCGUI\APP\requirements.txt"` in the command prompt. Don't forget to replace `C:\...\` by the path where you cloned the current repository.
+Clone this repository (check the [tutorial](https://docs.github.com/articles/cloning-a-repository) if you don't know how to do) on your computer at the desired path, then run `pip install -r "C:\...\VMCGUI\APP\requirements.txt"` in the command prompt. Don't forget to replace `C:\...\` by the path where you cloned the current repository.
 > The previous path is given under Windows format, so be sure of using the correct path format if you are not working under Windows.
 
-Now, you can start the interface using python with the following command : `python VMCGUI.py`
+Now, you can navigate to the app directory using `cd VMCGUI/APP`, then run the interface using python with the following command : `python VMCGUI.py`
+
+----------
+Configuring new kits
+----------
+
+Kits available from the start dialog of VMCGUI are loaded from the Python files available in the [`APP/Kits`](APP/Kits) folder. To configure a new kit for your application, you need to use the [`#BlankKit.py`](APP/Kits/#BlankKit.py) template from the [`APP/Kits`](APP/Kits) folder.
+> Note that placing a `#` at the begining of a kit file name will ignore it in the start dialog.
+
+If you want to check for existing kits, you may check at [the repo of available kits](https://github.com/LSDRM/VMC_Kits).
 
 ----------
 Compatibility
