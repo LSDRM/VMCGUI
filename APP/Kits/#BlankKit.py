@@ -1,3 +1,18 @@
+"""
+Blank Kit Template
+==================
+
+A template for creating new kits for the VMCGUI application.
+
+This file provides the basic structure and essential components needed to create
+a custom kit. It includes all required methods and variables that VMCGUI expects,
+with placeholders for kit-specific implementation.
+
+Usage:
+    Copy this file and modify it to create your own custom kit.
+    Implement the required methods with your specific hardware communication logic.
+"""
+
 # REQUIRED
 import sys
 sys.path.append('..')
@@ -9,16 +24,42 @@ from datetime import datetime
 from math import sin, pi
 
 
-'''Blank Kit python file'''
-
 # This file permits to write a new kit by yourself.
 # Every classes, methods and variables already writen in this file are essentials to VMCGUI (except those are referred as EXTRA), if VMCGUI.py has not been modified.
 # Therefore, you can add your own classes, methods and variables according to your needs.
 
 
 class KitWindow(MainWindow):
+    """
+    Main window class for custom kits.
+    
+    This class extends the MainWindow class from VMCGUI and provides the
+    basic structure for creating custom kit interfaces. It handles sensor
+    data visualization, GPIO control, and data acquisition.
+    
+    Attributes:
+        prefix (str): Default prefix for saved files
+        closeStartWindowOnLaunch (bool): Whether to close the start window when launching
+        graphTitle (list): Titles for each sensor graph
+        sensorsNumber (int): Number of sensors
+        GPIOsNumber (int): Number of GPIO pins
+        samplesPerBurst (int): Number of samples to acquire per burst
+        delayBetweenSamples (int): Delay between samples in a burst
+        lineTimeOffset (int): Time offset for data lines
+        unitMemory (list): Unit conversion dictionaries for each sensor
+    """
 
     def __init__(self, *args, **kwargs):
+        """
+        Initialize the KitWindow.
+        
+        Sets up the window title, sensor configuration, GPIO settings,
+        and starts the data acquisition timer.
+        
+        Args:
+            *args: Variable length argument list
+            **kwargs: Arbitrary keyword arguments
+        """
         super(KitWindow, self).__init__(*args, **kwargs)
 
         self.setWindowTitle("VMCGUI - Put the title of your window here")
@@ -52,13 +93,42 @@ class KitWindow(MainWindow):
         self.timer.start()
 
 
-    def checkGPIOstate(self, i):    # If you don't have any GPIO in your system, and set self.GPIOsNumber to 0, you can safely remove this method.
+    def checkGPIOstate(self, i):
+        """
+        Check the state of a GPIO pin.
+        
+        This method checks whether a specific GPIO pin is active and updates
+        the corresponding icon in the UI.
+        
+        Args:
+            i (int): GPIO identifier/pin number
+            
+        Returns:
+            bool: True if GPIO is active, False otherwise
+        
+        Note:
+            If you don't have any GPIO in your system, and set self.GPIOsNumber to 0,
+            you can safely remove this method.
+        """
         state = GPIO[i].isActive()  # HERE, you must replace GPIO[i].isActive() with the instruction you'll use to check if the GPIO with identifier 'i' is active. "state" takes a bool value.
         self.setGPIOicon(i, state)
         return state
 
 
     def get_measures(self, N):
+        """
+        Retrieve measurements from all sensors.
+        
+        This method acquires N samples from each sensor and stores them
+        in the appropriate data structures for visualization.
+        
+        Args:
+            N (int): Number of samples to acquire
+            
+        Note:
+            Implement the specific measurement retrieval logic for your hardware.
+            The method should handle both 1-by-1 and N-by-N sampling modes.
+        """
         sampleTime = datetime.timestamp(datetime.now()) + self.lineTimeOffset
 
         # Place here the block of code to retrieve your measurements from your system.
@@ -84,6 +154,20 @@ class KitWindow(MainWindow):
 
     # EXTRA
     def get_pres(self, ID):
+        """
+        Get pressure measurement for a sensor (example implementation).
+        
+        This is an example method showing how to acquire and process
+        pressure measurements. It generates simulated pressure data
+        using a sine wave function.
+        
+        Args:
+            ID (int): Sensor identifier
+            
+        Note:
+            This is an EXTRA method provided as an example. Modify or
+            replace it with your actual pressure measurement logic.
+        """
         pres = sin(self.time[-1]/4 + ID*pi)/4 + 1
         self.y[ID].append(self.unitMemory[ID].get(self.Unit[ID].currentText()) * pres)    # NOTE the '*' here to multiply the value by the unit. (Conversion of pressure is usually made by multiplication)
         self.Graph[ID].setTitle(self.graphTitle[ID] + str("%.3f" % round(self.y[ID][-1], 3)) + " " + self.Unit[ID].currentText(), color='w')    # To actualize the graph title with the last value plotted.
@@ -91,12 +175,39 @@ class KitWindow(MainWindow):
     
     # EXTRA
     def get_temp(self, ID):
+        """
+        Get temperature measurement for a sensor (example implementation).
+        
+        This is an example method showing how to acquire and process
+        temperature measurements. It generates simulated temperature data
+        using random values.
+        
+        Args:
+            ID (int): Sensor identifier
+            
+        Note:
+            This is an EXTRA method provided as an example. Modify or
+            replace it with your actual temperature measurement logic.
+        """
         temp = randint(0, 100)/100 + 298.15
         self.y[ID].append(temp + self.unitMemory[ID].get(self.Unit[ID].currentText()))    # NOTE the '+' here to add the value to the unit. (Conversion of temperature is usually made by addition).
         self.Graph[ID].setTitle(self.graphTitle[ID] + str("%.3f" % round(self.y[ID][-1], 3)) + " " + self.Unit[ID].currentText(), color='w')    # To actualize the graph title with the last value plotted.
 
 
-    def manualSetGPIO(self, i):     # If you don't have any GPIO in your system, and set self.GPIOsNumber to 0, you can safely remove this method.
+    def manualSetGPIO(self, i):
+        """
+        Manually set the state of a GPIO pin.
+        
+        This method allows manual control of GPIO pins through the UI.
+        It sets the GPIO state based on the corresponding button state.
+        
+        Args:
+            i (int): GPIO identifier/pin number
+            
+        Note:
+            If you don't have any GPIO in your system, and set self.GPIOsNumber to 0,
+            you can safely remove this method.
+        """
         if i is None:
             i = int(self.sender().objectName())
 
@@ -105,7 +216,21 @@ class KitWindow(MainWindow):
         self.checkGPIOstate(i)
 
 
-    def autoSetGPIO(self, i, value="INVERT"):   # If you don't have any GPIO in your system, and set self.GPIOsNumber to 0, you can safely remove this method.
+    def autoSetGPIO(self, i, value="INVERT"):
+        """
+        Automatically set the state of a GPIO pin.
+        
+        This method provides programmatic control of GPIO pins, allowing
+        them to be set to specific states or toggled.
+        
+        Args:
+            i (int): GPIO identifier/pin number
+            value (str/bool): Desired GPIO state. "INVERT" to toggle, bool for specific state
+            
+        Note:
+            If you don't have any GPIO in your system, and set self.GPIOsNumber to 0,
+            you can safely remove this method.
+        """
         if i is None:
             i = int(self.sender().objectName())
 
@@ -113,13 +238,41 @@ class KitWindow(MainWindow):
         self.checkGPIOstate(i)
 
 
-    def writeMeasurements(self, pos):       # Write a line of measurements in the opened file
+    def writeMeasurements(self, pos):
+        """
+        Write measurements to the opened file.
+        
+        This method writes a line of measurements from all sensors to the
+        currently opened data file. Measurements are written with their
+        default unit values.
+        
+        Args:
+            pos (int): Position/index of the measurement to write
+            
+        Note:
+            The measurements are written with the default unit value (first unit
+            in each self.unitMemory[i] dictionary).
+        """
         self.file.write(str(self.time[pos]) + "\t\t" + str(self.y[0][pos] / self.unitMemory[0].get(self.Unit[0].currentText())) + "\t\t" + str(self.y[1][pos] - self.unitMemory[1].get(self.Unit[1].currentText())) + "\n")
         # The line above is used when recording measurements, it writes the measure of each sensor in the selected file, with the default unit value (default unit is the first one in each self.unitMemory[i] dictionnary).
 
 
 
-def deviceConnection():         # This method serve to check if the whole system is properly connected to the computer.
+def deviceConnection():
+    """
+    Check if the system is properly connected to the computer.
+    
+    This function verifies that the hardware kit is properly connected
+    and accessible. It should be implemented with kit-specific connection
+    checking logic.
+    
+    Returns:
+        bool: True if system is connected properly, False otherwise
+        
+    Note:
+        Replace system.isConnected() with your actual connection checking method.
+        If connection fails, it displays a dialog (0x04) to inform the user.
+    """
     if system.isConnected():    # HERE, you should replace system.isConnected() by your method checking if the system is properly connected.
         return True
     else:
