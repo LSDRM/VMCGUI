@@ -1,6 +1,6 @@
-# Welcome to MkDocs
+# Welcome to VMCGUI documentation
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Full documentation for [VMCGUI](https://github.com/LSDRM/VMCGUI), the Versatile Measurement and Control Graphical User Interface.
 
 ## Commands
 

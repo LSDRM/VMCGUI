@@ -4,13 +4,18 @@ plugins:
   - mkdocstrings:
       enabled: !ENV [ENABLE_MKDOCSTRINGS, true]
       default_handler: python
+  - section-index:
+      toc_title: Title
 
 nav:
   - Home: index.md
   - Tutorials: tutorials.md
   - How-To Guides: how-to-guides.md
-  - Reference: reference.md
+  - Reference:
+      - reference/index.md
+      - Kits: reference/kits.md
+      - GUI: reference/vmcgui.md
   - Explanation: explanation.md
 
 theme:
-  name: "readthedocs"
+  name: "materialx"
