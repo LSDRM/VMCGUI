@@ -1,1 +1,2 @@
-# Empty file to prevent git ignoring libsForKits folder when pushing
+# Ignore __pycache__ when pushing
+__pycache__
