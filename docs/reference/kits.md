@@ -14,6 +14,9 @@ All kit files (e.g. `Debug GUI.py`) located at the `APP/Kits` folder of the VMCG
 
 #### Mandatory methods
 
+> [!NOTE]
+> get_measures()
+
 | Method | Description |
 |--------|-------------|
 | `get_measures()` | This method will be called by VMCGUI when it need to get the measures from the sensors |
