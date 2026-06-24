@@ -1,0 +1,7 @@
+# Ignore everything in the current folder
+*
+
+# Except BlankKit and Debug GUI
+!#BlankKit.py
+!Debug GUI.py
+!.gitignore
