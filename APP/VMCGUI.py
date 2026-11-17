@@ -2,10 +2,47 @@
 ### VMCGUI ###
 ##############
 
+"""
+VMCGUI - Versatile Measurement and Control GUI
+================================================
+
+A Python-based graphical user interface for measurement and control applications.
+
+VMCGUI provides a flexible framework for creating custom interfaces to interact
+with various hardware kits, including Arduino-based systems, sensors, and
+measurement devices. It features real-time data visualization, data recording,
+GPIO control, and unit conversion capabilities.
+
+Key Features:
+    - Modular kit-based architecture
+    - Real-time data plotting with PyQtGraph
+    - Multi-sensor support with unit conversion
+    - GPIO control interface
+    - Data recording and playback
+    - Customizable sampling rates
+    - Extensible through kit-specific implementations
+
+Architecture:
+    - MainWindow: Core GUI functionality and base class
+    - KitWindow: Hardware-specific implementations (inherit from MainWindow)
+    - SetupWindow: Kit selection and configuration
+    - Data processing and visualization components
+
+Usage:
+    VMCGUI is designed to be extended by creating custom kit files that inherit
+    from the MainWindow class and implement hardware-specific communication and
+    data acquisition logic.
+
+License:
+    Open source - see repository for details
+
+GitHub: https://github.com/LSDRM/VMCGUI
+"""
+
 # GitHub : https://github.com/LSDRM/VMCGUI
 # Contributor : Corentin COUTELLIER (https://github.com/B137P107)
 # Initiated at : CEA/Laboratory Structure and Dynamics by Magnetic Resonance
-# Date : 2023/12/07
+# Date : 2025/10/02
 # Version : 1.0
 
 import icons
@@ -25,6 +62,33 @@ from PyQt5 import QtWidgets, QtCore, QtGui, QtWebEngineWidgets
 
 
 class MainWindow(QtWidgets.QMainWindow):
+    """
+    Main Window Class for VMCGUI Application
+    ========================================
+    
+    The main window class that provides the core GUI functionality for
+    the VMCGUI (Versatile Measurement and Control GUI) application.
+    
+    This class handles:
+        - Toolbar setup and management
+        - Data recording and file operations
+        - Graph configuration and display
+        - Sensor data visualization
+        - GPIO control interface
+        - Kit management and loading
+        - Data processing and unit conversion
+    
+    The MainWindow serves as the base class that specific kit windows
+    inherit from to provide hardware-specific functionality.
+    
+    Attributes:
+        suffix (str): File extension for kit files
+        dir (str): Current working directory
+        recON (bool): Recording status flag
+        sampleUnitMultiplier (int): Time unit conversion multiplier
+        totalUnitMultiplier (int): Total time unit conversion multiplier
+        lineFaultCounter (int): Counter for data line faults
+    """
 
     def __init__(self, *args, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)

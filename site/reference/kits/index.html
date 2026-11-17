@@ -1,0 +1,2709 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../reference/">
+      
+      
+        <link rel="next" href="../vmcgui/">
+      
+      
+        
+      
+      
+      
+      
+        
+        
+        
+          <link rel="icon" href="../../assets/images/favicon.png">
+        
+      
+      <meta name="generator" content="mkdocs-ProperDocs 1.6.7, mkdocs-materialx-10.2.2">
+    
+    
+      
+        <title>Kits - VMCGUI Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d60cbd7.min.css">
+      
+    
+    
+
+    
+
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+  
+  
+    <body dir="ltr" data-mx-topbar="glass">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="toc" type="checkbox" id="__toc" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <label class="md-overlay" for="__toc"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kits-files-reference" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="VMCGUI Docs" class="md-header__button md-logo" aria-label="VMCGUI Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            VMCGUI Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kits
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="VMCGUI Docs" class="md-nav__button md-logo" aria-label="VMCGUI Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    VMCGUI Docs
+  </label>
+  
+  <ul class="md-nav__list">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tutorials/tutorials/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorials
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorials
+  
+
+          </label>
+          <ul class="md-nav__list">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/make-a-kit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Make a custom kit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How-To Guides
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../reference/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference
+  
+
+          </label>
+          <ul class="md-nav__list">
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kits
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kits
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc">
+      
+        <li class="md-nav__item">
+  <a href="#APP.Kits.#BlankKit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #BlankKit
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#APP.Kits.#BlankKit--blank-kit-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Blank Kit Template
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#APP.Kits.#BlankKit.KitWindow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        KitWindow
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="KitWindow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#APP.Kits.#BlankKit.KitWindow.__init__" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        __init__
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#APP.Kits.#BlankKit.KitWindow.autoSetGPIO" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        autoSetGPIO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#APP.Kits.#BlankKit.KitWindow.checkGPIOstate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        checkGPIOstate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#APP.Kits.#BlankKit.KitWindow.get_measures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_measures
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#APP.Kits.#BlankKit.KitWindow.get_pres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_pres
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#APP.Kits.#BlankKit.KitWindow.get_temp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_temp
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#APP.Kits.#BlankKit.KitWindow.manualSetGPIO" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        manualSetGPIO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#APP.Kits.#BlankKit.KitWindow.writeMeasurements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        writeMeasurements
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#APP.Kits.#BlankKit.deviceConnection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        deviceConnection
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vmcgui/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GUI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../explanations/explanations/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Explanations
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Explanations
+  
+
+          </label>
+          <ul class="md-nav__list">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/kit-structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Understanding kit structure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanations/mandatories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mandatory attributes & methods
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc">
+      
+        <li class="md-nav__item">
+  <a href="#APP.Kits.#BlankKit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #BlankKit
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#APP.Kits.#BlankKit--blank-kit-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Blank Kit Template
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#APP.Kits.#BlankKit.KitWindow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        KitWindow
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="KitWindow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#APP.Kits.#BlankKit.KitWindow.__init__" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        __init__
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#APP.Kits.#BlankKit.KitWindow.autoSetGPIO" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        autoSetGPIO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#APP.Kits.#BlankKit.KitWindow.checkGPIOstate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        checkGPIOstate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#APP.Kits.#BlankKit.KitWindow.get_measures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_measures
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#APP.Kits.#BlankKit.KitWindow.get_pres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_pres
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#APP.Kits.#BlankKit.KitWindow.get_temp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_temp
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#APP.Kits.#BlankKit.KitWindow.manualSetGPIO" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        manualSetGPIO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#APP.Kits.#BlankKit.KitWindow.writeMeasurements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        writeMeasurements
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#APP.Kits.#BlankKit.deviceConnection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        deviceConnection
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              
+              
+              <article class="md-content__inner md-typeset" >
+                
+                  
+
+<h1 id="kits-files-reference">Kits files reference</h1>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="APP.Kits.#BlankKit"></a>
+    <div class="doc doc-contents first">
+
+        <h2 id="APP.Kits.#BlankKit--blank-kit-template">Blank Kit Template</h2>
+<p>A template for creating new kits for the VMCGUI application.</p>
+<p>This file provides the basic structure and essential components needed to create
+a custom kit. It includes all required methods and variables that VMCGUI expects,
+with placeholders for kit-specific implementation.</p>
+
+
+<details class="usage" open>
+  <summary>Usage</summary>
+  <p>Copy this file and modify it to create your own custom kit.
+Implement the required methods with your specific hardware communication logic.</p>
+</details>
+
+
+
+
+
+
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="APP.Kits.#BlankKit.KitWindow" class="doc doc-heading">
+            <code>KitWindow</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code>MainWindow</code></p>
+
+
+
+        <p>Main window class for custom kits.</p>
+<p>This class extends the MainWindow class from VMCGUI and provides the
+basic structure for creating custom kit interfaces. It handles sensor
+data visualization, GPIO control, and data acquisition.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="APP.Kits.#BlankKit.KitWindow.prefix">prefix</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Default prefix for saved files</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="APP.Kits.#BlankKit.KitWindow.closeStartWindowOnLaunch">closeStartWindowOnLaunch</span></code></td>
+            <td>
+                  <code><span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Whether to close the start window when launching</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="APP.Kits.#BlankKit.KitWindow.graphTitle">graphTitle</span></code></td>
+            <td>
+                  <code><span title="list">list</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Titles for each sensor graph</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="APP.Kits.#BlankKit.KitWindow.sensorsNumber">sensorsNumber</span></code></td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Number of sensors</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="APP.Kits.#BlankKit.KitWindow.GPIOsNumber">GPIOsNumber</span></code></td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Number of GPIO pins</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="APP.Kits.#BlankKit.KitWindow.samplesPerBurst">samplesPerBurst</span></code></td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Number of samples to acquire per burst</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="APP.Kits.#BlankKit.KitWindow.delayBetweenSamples">delayBetweenSamples</span></code></td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Delay between samples in a burst</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="APP.Kits.#BlankKit.KitWindow.lineTimeOffset">lineTimeOffset</span></code></td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Time offset for data lines</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="APP.Kits.#BlankKit.KitWindow.unitMemory">unitMemory</span></code></td>
+            <td>
+                  <code><span title="list">list</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Unit conversion dictionaries for each sensor</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+              <details class="mkdocstrings-source">
+                <summary>Source code in <code>APP\Kits\#BlankKit.py</code></summary>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 32</span>
+<span class="normal"> 33</span>
+<span class="normal"> 34</span>
+<span class="normal"> 35</span>
+<span class="normal"> 36</span>
+<span class="normal"> 37</span>
+<span class="normal"> 38</span>
+<span class="normal"> 39</span>
+<span class="normal"> 40</span>
+<span class="normal"> 41</span>
+<span class="normal"> 42</span>
+<span class="normal"> 43</span>
+<span class="normal"> 44</span>
+<span class="normal"> 45</span>
+<span class="normal"> 46</span>
+<span class="normal"> 47</span>
+<span class="normal"> 48</span>
+<span class="normal"> 49</span>
+<span class="normal"> 50</span>
+<span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
+<span class="normal"> 54</span>
+<span class="normal"> 55</span>
+<span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span>
+<span class="normal">180</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span>
+<span class="normal">191</span>
+<span class="normal">192</span>
+<span class="normal">193</span>
+<span class="normal">194</span>
+<span class="normal">195</span>
+<span class="normal">196</span>
+<span class="normal">197</span>
+<span class="normal">198</span>
+<span class="normal">199</span>
+<span class="normal">200</span>
+<span class="normal">201</span>
+<span class="normal">202</span>
+<span class="normal">203</span>
+<span class="normal">204</span>
+<span class="normal">205</span>
+<span class="normal">206</span>
+<span class="normal">207</span>
+<span class="normal">208</span>
+<span class="normal">209</span>
+<span class="normal">210</span>
+<span class="normal">211</span>
+<span class="normal">212</span>
+<span class="normal">213</span>
+<span class="normal">214</span>
+<span class="normal">215</span>
+<span class="normal">216</span>
+<span class="normal">217</span>
+<span class="normal">218</span>
+<span class="normal">219</span>
+<span class="normal">220</span>
+<span class="normal">221</span>
+<span class="normal">222</span>
+<span class="normal">223</span>
+<span class="normal">224</span>
+<span class="normal">225</span>
+<span class="normal">226</span>
+<span class="normal">227</span>
+<span class="normal">228</span>
+<span class="normal">229</span>
+<span class="normal">230</span>
+<span class="normal">231</span>
+<span class="normal">232</span>
+<span class="normal">233</span>
+<span class="normal">234</span>
+<span class="normal">235</span>
+<span class="normal">236</span>
+<span class="normal">237</span>
+<span class="normal">238</span>
+<span class="normal">239</span>
+<span class="normal">240</span>
+<span class="normal">241</span>
+<span class="normal">242</span>
+<span class="normal">243</span>
+<span class="normal">244</span>
+<span class="normal">245</span>
+<span class="normal">246</span>
+<span class="normal">247</span>
+<span class="normal">248</span>
+<span class="normal">249</span>
+<span class="normal">250</span>
+<span class="normal">251</span>
+<span class="normal">252</span>
+<span class="normal">253</span>
+<span class="normal">254</span>
+<span class="normal">255</span>
+<span class="normal">256</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">KitWindow</span><span class="p">(</span><span class="n">MainWindow</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Main window class for custom kits.</span>
+
+<span class="sd">    This class extends the MainWindow class from VMCGUI and provides the</span>
+<span class="sd">    basic structure for creating custom kit interfaces. It handles sensor</span>
+<span class="sd">    data visualization, GPIO control, and data acquisition.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        prefix (str): Default prefix for saved files</span>
+<span class="sd">        closeStartWindowOnLaunch (bool): Whether to close the start window when launching</span>
+<span class="sd">        graphTitle (list): Titles for each sensor graph</span>
+<span class="sd">        sensorsNumber (int): Number of sensors</span>
+<span class="sd">        GPIOsNumber (int): Number of GPIO pins</span>
+<span class="sd">        samplesPerBurst (int): Number of samples to acquire per burst</span>
+<span class="sd">        delayBetweenSamples (int): Delay between samples in a burst</span>
+<span class="sd">        lineTimeOffset (int): Time offset for data lines</span>
+<span class="sd">        unitMemory (list): Unit conversion dictionaries for each sensor</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initialize the KitWindow.</span>
+
+<span class="sd">        Sets up the window title, sensor configuration, GPIO settings,</span>
+<span class="sd">        and starts the data acquisition timer.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            *args: Variable length argument list</span>
+<span class="sd">            **kwargs: Arbitrary keyword arguments</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">KitWindow</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">setWindowTitle</span><span class="p">(</span><span class="s2">&quot;VMCGUI - Put the title of your window here&quot;</span><span class="p">)</span>
+
+        <span class="c1"># REQUIRED</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">prefix</span> <span class="o">=</span> <span class="s2">&quot;Here the default prefix for your files&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">closeStartWindowOnLaunch</span> <span class="o">=</span> <span class="kc">True</span>    <span class="c1"># With this version of VMCGUI, I recommend to keep this to True, to prevent multiple windows trying to access to the the same port/communication interface.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">graphTitle</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Sensor1 &quot;</span><span class="p">,</span> <span class="s2">&quot;Sensor2 &quot;</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sensorsNumber</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">graphTitle</span><span class="p">)</span>   <span class="c1"># self.sensorsNumber should correspond to the number of titles in self.graphTitle</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">GPIOsNumber</span> <span class="o">=</span> <span class="mi">3</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">samplesPerBurst</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">delayBetweenSamples</span> <span class="o">=</span> <span class="mi">0</span>    <span class="c1"># Should be 0 if samplesPerBurst = 1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">lineTimeOffset</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">unitMemory</span> <span class="o">=</span> <span class="p">[</span>     <span class="c1"># len(self.unitMemory) should be equal to the sensorsNumber. If you have multiple times a same sensor, you&#39;ll have multiple times the same dictionnary (see python dict).</span>
+            <span class="p">{</span>                   <span class="c1"># For example here, the first sensor may be a pressure sensor, and the second one a temperature sensor.</span>
+                <span class="s2">&quot;Bar&quot;</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="s2">&quot;Pa&quot;</span> <span class="p">:</span> <span class="mi">100000</span><span class="p">,</span>
+                <span class="s2">&quot;PSI&quot;</span> <span class="p">:</span> <span class="mf">14.50377</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;Kelvin&quot;</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+                <span class="s2">&quot;Celsius&quot;</span> <span class="p">:</span> <span class="o">-</span><span class="mf">273.15</span>
+            <span class="p">}</span>
+        <span class="p">]</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">initCentralFrame</span><span class="p">()</span>     <span class="c1"># Call the initCentralFrame() method from the MainWindow class in VMCGUI.py will automatically generate the layout according to the number of sensors and GPIOs.</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">timer</span> <span class="o">=</span> <span class="n">QtCore</span><span class="o">.</span><span class="n">QTimer</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">timer</span><span class="o">.</span><span class="n">setInterval</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sampleTime</span><span class="o">.</span><span class="n">value</span><span class="p">()</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">sampleUnitMultiplier</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">timer</span><span class="o">.</span><span class="n">timeout</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">update_plot_data</span><span class="p">)</span>   <span class="c1"># Call udate_plot_data() method from VMCGUI.py each times the interval time is reached.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">timer</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">checkGPIOstate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Check the state of a GPIO pin.</span>
+
+<span class="sd">        This method checks whether a specific GPIO pin is active and updates</span>
+<span class="sd">        the corresponding icon in the UI.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            i (int): GPIO identifier/pin number</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            bool: True if GPIO is active, False otherwise</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            If you don&#39;t have any GPIO in your system, and set self.GPIOsNumber to 0,</span>
+<span class="sd">            you can safely remove this method.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">state</span> <span class="o">=</span> <span class="n">GPIO</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">isActive</span><span class="p">()</span>  <span class="c1"># HERE, you must replace GPIO[i].isActive() with the instruction you&#39;ll use to check if the GPIO with identifier &#39;i&#39; is active. &quot;state&quot; takes a bool value.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setGPIOicon</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">state</span>
+
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_measures</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">N</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Retrieve measurements from all sensors.</span>
+
+<span class="sd">        This method acquires N samples from each sensor and stores them</span>
+<span class="sd">        in the appropriate data structures for visualization.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            N (int): Number of samples to acquire</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            Implement the specific measurement retrieval logic for your hardware.</span>
+<span class="sd">            The method should handle both 1-by-1 and N-by-N sampling modes.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">sampleTime</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timestamp</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">())</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">lineTimeOffset</span>
+
+        <span class="c1"># Place here the block of code to retrieve your measurements from your system.</span>
+        <span class="c1"># If your system works in a 1-by-1 sample mode, you must ask for a sample of measure for each of your sensors, and store them.</span>
+        <span class="c1"># If your system works in an N-by-N samples mode, you must ask for N samples of measure for each of your sensors, and store them.</span>
+
+        <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>                  <span class="c1"># This block works for both 1-by-1 and N-by-N modes.</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">time</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sampleTime</span><span class="p">)</span>
+            <span class="n">sampleTime</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">delayBetweenSamples</span>
+
+            <span class="k">for</span> <span class="n">ID</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sensorsNumber</span><span class="p">):</span>
+
+                <span class="c1"># Place here the block of code to process your stored measures.</span>
+                <span class="c1"># Those stored measures will need to get append to the self.y[ID] list under the corrected unit.</span>
+                <span class="c1"># In most of cases, you&#39;ll need to convert the binary value of each measure to a float value or other.</span>
+                <span class="c1"># Here is a little example below with the get_pres and get_temp methods.</span>
+
+                <span class="k">if</span> <span class="n">ID</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">get_pres</span><span class="p">(</span><span class="n">ID</span><span class="p">)</span>
+                <span class="k">elif</span> <span class="n">ID</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">get_temp</span><span class="p">(</span><span class="n">ID</span><span class="p">)</span>
+
+
+    <span class="c1"># EXTRA</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_pres</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ID</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get pressure measurement for a sensor (example implementation).</span>
+
+<span class="sd">        This is an example method showing how to acquire and process</span>
+<span class="sd">        pressure measurements. It generates simulated pressure data</span>
+<span class="sd">        using a sine wave function.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            ID (int): Sensor identifier</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            This is an EXTRA method provided as an example. Modify or</span>
+<span class="sd">            replace it with your actual pressure measurement logic.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">pres</span> <span class="o">=</span> <span class="n">sin</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">time</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">4</span> <span class="o">+</span> <span class="n">ID</span><span class="o">*</span><span class="n">pi</span><span class="p">)</span><span class="o">/</span><span class="mi">4</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">unitMemory</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Unit</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span><span class="o">.</span><span class="n">currentText</span><span class="p">())</span> <span class="o">*</span> <span class="n">pres</span><span class="p">)</span>    <span class="c1"># NOTE the &#39;*&#39; here to multiply the value by the unit. (Conversion of pressure is usually made by multiplication)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Graph</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span><span class="o">.</span><span class="n">setTitle</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">graphTitle</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%.3f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">round</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="n">ID</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="mi">3</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">Unit</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span><span class="o">.</span><span class="n">currentText</span><span class="p">(),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>    <span class="c1"># To actualize the graph title with the last value plotted.</span>
+
+
+    <span class="c1"># EXTRA</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_temp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ID</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get temperature measurement for a sensor (example implementation).</span>
+
+<span class="sd">        This is an example method showing how to acquire and process</span>
+<span class="sd">        temperature measurements. It generates simulated temperature data</span>
+<span class="sd">        using random values.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            ID (int): Sensor identifier</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            This is an EXTRA method provided as an example. Modify or</span>
+<span class="sd">            replace it with your actual temperature measurement logic.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">temp</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span><span class="o">/</span><span class="mi">100</span> <span class="o">+</span> <span class="mf">298.15</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">temp</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">unitMemory</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Unit</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span><span class="o">.</span><span class="n">currentText</span><span class="p">()))</span>    <span class="c1"># NOTE the &#39;+&#39; here to add the value to the unit. (Conversion of temperature is usually made by addition).</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Graph</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span><span class="o">.</span><span class="n">setTitle</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">graphTitle</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%.3f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">round</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="n">ID</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="mi">3</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">Unit</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span><span class="o">.</span><span class="n">currentText</span><span class="p">(),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>    <span class="c1"># To actualize the graph title with the last value plotted.</span>
+
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">manualSetGPIO</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Manually set the state of a GPIO pin.</span>
+
+<span class="sd">        This method allows manual control of GPIO pins through the UI.</span>
+<span class="sd">        It sets the GPIO state based on the corresponding button state.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            i (int): GPIO identifier/pin number</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            If you don&#39;t have any GPIO in your system, and set self.GPIOsNumber to 0,</span>
+<span class="sd">            you can safely remove this method.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sender</span><span class="p">()</span><span class="o">.</span><span class="n">objectName</span><span class="p">())</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">applyGPIO</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+        <span class="c1"># Here, you may set the state of GPIO with identifier &#39;i&#39; to the value of &quot;self.outputManualSetButton[i].isChecked()&quot; which is boolean.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">checkGPIOstate</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">autoSetGPIO</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="s2">&quot;INVERT&quot;</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Automatically set the state of a GPIO pin.</span>
+
+<span class="sd">        This method provides programmatic control of GPIO pins, allowing</span>
+<span class="sd">        them to be set to specific states or toggled.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            i (int): GPIO identifier/pin number</span>
+<span class="sd">            value (str/bool): Desired GPIO state. &quot;INVERT&quot; to toggle, bool for specific state</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            If you don&#39;t have any GPIO in your system, and set self.GPIOsNumber to 0,</span>
+<span class="sd">            you can safely remove this method.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sender</span><span class="p">()</span><span class="o">.</span><span class="n">objectName</span><span class="p">())</span>
+
+        <span class="c1"># Here, you&#39;ll need to make the instruction to set the GPIO with identifier &#39;i&#39; to the given &#39;value&#39; (if value is not &quot;INVERT&quot;, it is boolean). If &#39;value&#39; is &quot;INVERT&quot;, the GPIO state need to be inverted.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">checkGPIOstate</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">writeMeasurements</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pos</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Write measurements to the opened file.</span>
+
+<span class="sd">        This method writes a line of measurements from all sensors to the</span>
+<span class="sd">        currently opened data file. Measurements are written with their</span>
+<span class="sd">        default unit values.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            pos (int): Position/index of the measurement to write</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            The measurements are written with the default unit value (first unit</span>
+<span class="sd">            in each self.unitMemory[i] dictionary).</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">time</span><span class="p">[</span><span class="n">pos</span><span class="p">])</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\t\t</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">pos</span><span class="p">]</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">unitMemory</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Unit</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">currentText</span><span class="p">()))</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\t\t</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">pos</span><span class="p">]</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">unitMemory</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Unit</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">currentText</span><span class="p">()))</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+              </details>
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="APP.Kits.#BlankKit.KitWindow.__init__" class="doc doc-heading">
+            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Initialize the KitWindow.</p>
+<p>Sets up the window title, sensor configuration, GPIO settings,
+and starts the data acquisition timer.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>*args</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Variable length argument list</p>
+              </div>
+            </td>
+            <td>
+                  <code>()</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>**kwargs</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Arbitrary keyword arguments</p>
+              </div>
+            </td>
+            <td>
+                  <code>{}</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>APP\Kits\#BlankKit.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span>
+<span class="normal">77</span>
+<span class="normal">78</span>
+<span class="normal">79</span>
+<span class="normal">80</span>
+<span class="normal">81</span>
+<span class="normal">82</span>
+<span class="normal">83</span>
+<span class="normal">84</span>
+<span class="normal">85</span>
+<span class="normal">86</span>
+<span class="normal">87</span>
+<span class="normal">88</span>
+<span class="normal">89</span>
+<span class="normal">90</span>
+<span class="normal">91</span>
+<span class="normal">92</span>
+<span class="normal">93</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Initialize the KitWindow.</span>
+
+<span class="sd">    Sets up the window title, sensor configuration, GPIO settings,</span>
+<span class="sd">    and starts the data acquisition timer.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        *args: Variable length argument list</span>
+<span class="sd">        **kwargs: Arbitrary keyword arguments</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">super</span><span class="p">(</span><span class="n">KitWindow</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">setWindowTitle</span><span class="p">(</span><span class="s2">&quot;VMCGUI - Put the title of your window here&quot;</span><span class="p">)</span>
+
+    <span class="c1"># REQUIRED</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">prefix</span> <span class="o">=</span> <span class="s2">&quot;Here the default prefix for your files&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">closeStartWindowOnLaunch</span> <span class="o">=</span> <span class="kc">True</span>    <span class="c1"># With this version of VMCGUI, I recommend to keep this to True, to prevent multiple windows trying to access to the the same port/communication interface.</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">graphTitle</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Sensor1 &quot;</span><span class="p">,</span> <span class="s2">&quot;Sensor2 &quot;</span><span class="p">]</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">sensorsNumber</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">graphTitle</span><span class="p">)</span>   <span class="c1"># self.sensorsNumber should correspond to the number of titles in self.graphTitle</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">GPIOsNumber</span> <span class="o">=</span> <span class="mi">3</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">samplesPerBurst</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">delayBetweenSamples</span> <span class="o">=</span> <span class="mi">0</span>    <span class="c1"># Should be 0 if samplesPerBurst = 1</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">lineTimeOffset</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">unitMemory</span> <span class="o">=</span> <span class="p">[</span>     <span class="c1"># len(self.unitMemory) should be equal to the sensorsNumber. If you have multiple times a same sensor, you&#39;ll have multiple times the same dictionnary (see python dict).</span>
+        <span class="p">{</span>                   <span class="c1"># For example here, the first sensor may be a pressure sensor, and the second one a temperature sensor.</span>
+            <span class="s2">&quot;Bar&quot;</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="s2">&quot;Pa&quot;</span> <span class="p">:</span> <span class="mi">100000</span><span class="p">,</span>
+            <span class="s2">&quot;PSI&quot;</span> <span class="p">:</span> <span class="mf">14.50377</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;Kelvin&quot;</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="s2">&quot;Celsius&quot;</span> <span class="p">:</span> <span class="o">-</span><span class="mf">273.15</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">initCentralFrame</span><span class="p">()</span>     <span class="c1"># Call the initCentralFrame() method from the MainWindow class in VMCGUI.py will automatically generate the layout according to the number of sensors and GPIOs.</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">timer</span> <span class="o">=</span> <span class="n">QtCore</span><span class="o">.</span><span class="n">QTimer</span><span class="p">()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">timer</span><span class="o">.</span><span class="n">setInterval</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sampleTime</span><span class="o">.</span><span class="n">value</span><span class="p">()</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">sampleUnitMultiplier</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">timer</span><span class="o">.</span><span class="n">timeout</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">update_plot_data</span><span class="p">)</span>   <span class="c1"># Call udate_plot_data() method from VMCGUI.py each times the interval time is reached.</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">timer</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="APP.Kits.#BlankKit.KitWindow.autoSetGPIO" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">autoSetGPIO</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="s1">&#39;INVERT&#39;</span><span class="p">)</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Automatically set the state of a GPIO pin.</p>
+<p>This method provides programmatic control of GPIO pins, allowing
+them to be set to specific states or toggled.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>i</code>
+            </td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>GPIO identifier/pin number</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>value</code>
+            </td>
+            <td>
+                  <code><span title="str">str</span> / <span title="bool">bool</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Desired GPIO state. "INVERT" to toggle, bool for specific state</p>
+              </div>
+            </td>
+            <td>
+                  <code>&#39;INVERT&#39;</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<details class="note" open>
+  <summary>Note</summary>
+  <p>If you don't have any GPIO in your system, and set self.GPIOsNumber to 0,
+you can safely remove this method.</p>
+</details>
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>APP\Kits\#BlankKit.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">219</span>
+<span class="normal">220</span>
+<span class="normal">221</span>
+<span class="normal">222</span>
+<span class="normal">223</span>
+<span class="normal">224</span>
+<span class="normal">225</span>
+<span class="normal">226</span>
+<span class="normal">227</span>
+<span class="normal">228</span>
+<span class="normal">229</span>
+<span class="normal">230</span>
+<span class="normal">231</span>
+<span class="normal">232</span>
+<span class="normal">233</span>
+<span class="normal">234</span>
+<span class="normal">235</span>
+<span class="normal">236</span>
+<span class="normal">237</span>
+<span class="normal">238</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">autoSetGPIO</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="s2">&quot;INVERT&quot;</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Automatically set the state of a GPIO pin.</span>
+
+<span class="sd">    This method provides programmatic control of GPIO pins, allowing</span>
+<span class="sd">    them to be set to specific states or toggled.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        i (int): GPIO identifier/pin number</span>
+<span class="sd">        value (str/bool): Desired GPIO state. &quot;INVERT&quot; to toggle, bool for specific state</span>
+
+<span class="sd">    Note:</span>
+<span class="sd">        If you don&#39;t have any GPIO in your system, and set self.GPIOsNumber to 0,</span>
+<span class="sd">        you can safely remove this method.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sender</span><span class="p">()</span><span class="o">.</span><span class="n">objectName</span><span class="p">())</span>
+
+    <span class="c1"># Here, you&#39;ll need to make the instruction to set the GPIO with identifier &#39;i&#39; to the given &#39;value&#39; (if value is not &quot;INVERT&quot;, it is boolean). If &#39;value&#39; is &quot;INVERT&quot;, the GPIO state need to be inverted.</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">checkGPIOstate</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="APP.Kits.#BlankKit.KitWindow.checkGPIOstate" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">checkGPIOstate</span><span class="p">(</span><span class="n">i</span><span class="p">)</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Check the state of a GPIO pin.</p>
+<p>This method checks whether a specific GPIO pin is active and updates
+the corresponding icon in the UI.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>i</code>
+            </td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>GPIO identifier/pin number</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+<th>Name</th>          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+<td><code>bool</code></td>            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>True if GPIO is active, False otherwise</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<details class="note" open>
+  <summary>Note</summary>
+  <p>If you don't have any GPIO in your system, and set self.GPIOsNumber to 0,
+you can safely remove this method.</p>
+</details>
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>APP\Kits\#BlankKit.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">checkGPIOstate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Check the state of a GPIO pin.</span>
+
+<span class="sd">    This method checks whether a specific GPIO pin is active and updates</span>
+<span class="sd">    the corresponding icon in the UI.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        i (int): GPIO identifier/pin number</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        bool: True if GPIO is active, False otherwise</span>
+
+<span class="sd">    Note:</span>
+<span class="sd">        If you don&#39;t have any GPIO in your system, and set self.GPIOsNumber to 0,</span>
+<span class="sd">        you can safely remove this method.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">state</span> <span class="o">=</span> <span class="n">GPIO</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">isActive</span><span class="p">()</span>  <span class="c1"># HERE, you must replace GPIO[i].isActive() with the instruction you&#39;ll use to check if the GPIO with identifier &#39;i&#39; is active. &quot;state&quot; takes a bool value.</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">setGPIOicon</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">state</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="APP.Kits.#BlankKit.KitWindow.get_measures" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_measures</span><span class="p">(</span><span class="n">N</span><span class="p">)</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Retrieve measurements from all sensors.</p>
+<p>This method acquires N samples from each sensor and stores them
+in the appropriate data structures for visualization.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>N</code>
+            </td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Number of samples to acquire</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<details class="note" open>
+  <summary>Note</summary>
+  <p>Implement the specific measurement retrieval logic for your hardware.
+The method should handle both 1-by-1 and N-by-N sampling modes.</p>
+</details>
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>APP\Kits\#BlankKit.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">get_measures</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">N</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retrieve measurements from all sensors.</span>
+
+<span class="sd">    This method acquires N samples from each sensor and stores them</span>
+<span class="sd">    in the appropriate data structures for visualization.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        N (int): Number of samples to acquire</span>
+
+<span class="sd">    Note:</span>
+<span class="sd">        Implement the specific measurement retrieval logic for your hardware.</span>
+<span class="sd">        The method should handle both 1-by-1 and N-by-N sampling modes.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">sampleTime</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timestamp</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">())</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">lineTimeOffset</span>
+
+    <span class="c1"># Place here the block of code to retrieve your measurements from your system.</span>
+    <span class="c1"># If your system works in a 1-by-1 sample mode, you must ask for a sample of measure for each of your sensors, and store them.</span>
+    <span class="c1"># If your system works in an N-by-N samples mode, you must ask for N samples of measure for each of your sensors, and store them.</span>
+
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>                  <span class="c1"># This block works for both 1-by-1 and N-by-N modes.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">time</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sampleTime</span><span class="p">)</span>
+        <span class="n">sampleTime</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">delayBetweenSamples</span>
+
+        <span class="k">for</span> <span class="n">ID</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sensorsNumber</span><span class="p">):</span>
+
+            <span class="c1"># Place here the block of code to process your stored measures.</span>
+            <span class="c1"># Those stored measures will need to get append to the self.y[ID] list under the corrected unit.</span>
+            <span class="c1"># In most of cases, you&#39;ll need to convert the binary value of each measure to a float value or other.</span>
+            <span class="c1"># Here is a little example below with the get_pres and get_temp methods.</span>
+
+            <span class="k">if</span> <span class="n">ID</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">get_pres</span><span class="p">(</span><span class="n">ID</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">ID</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">get_temp</span><span class="p">(</span><span class="n">ID</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="APP.Kits.#BlankKit.KitWindow.get_pres" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_pres</span><span class="p">(</span><span class="n">ID</span><span class="p">)</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Get pressure measurement for a sensor (example implementation).</p>
+<p>This is an example method showing how to acquire and process
+pressure measurements. It generates simulated pressure data
+using a sine wave function.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>ID</code>
+            </td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Sensor identifier</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<details class="note" open>
+  <summary>Note</summary>
+  <p>This is an EXTRA method provided as an example. Modify or
+replace it with your actual pressure measurement logic.</p>
+</details>
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>APP\Kits\#BlankKit.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">get_pres</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ID</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Get pressure measurement for a sensor (example implementation).</span>
+
+<span class="sd">    This is an example method showing how to acquire and process</span>
+<span class="sd">    pressure measurements. It generates simulated pressure data</span>
+<span class="sd">    using a sine wave function.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        ID (int): Sensor identifier</span>
+
+<span class="sd">    Note:</span>
+<span class="sd">        This is an EXTRA method provided as an example. Modify or</span>
+<span class="sd">        replace it with your actual pressure measurement logic.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">pres</span> <span class="o">=</span> <span class="n">sin</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">time</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">4</span> <span class="o">+</span> <span class="n">ID</span><span class="o">*</span><span class="n">pi</span><span class="p">)</span><span class="o">/</span><span class="mi">4</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">unitMemory</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Unit</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span><span class="o">.</span><span class="n">currentText</span><span class="p">())</span> <span class="o">*</span> <span class="n">pres</span><span class="p">)</span>    <span class="c1"># NOTE the &#39;*&#39; here to multiply the value by the unit. (Conversion of pressure is usually made by multiplication)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">Graph</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span><span class="o">.</span><span class="n">setTitle</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">graphTitle</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%.3f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">round</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="n">ID</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="mi">3</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">Unit</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span><span class="o">.</span><span class="n">currentText</span><span class="p">(),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>    <span class="c1"># To actualize the graph title with the last value plotted.</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="APP.Kits.#BlankKit.KitWindow.get_temp" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_temp</span><span class="p">(</span><span class="n">ID</span><span class="p">)</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Get temperature measurement for a sensor (example implementation).</p>
+<p>This is an example method showing how to acquire and process
+temperature measurements. It generates simulated temperature data
+using random values.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>ID</code>
+            </td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Sensor identifier</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<details class="note" open>
+  <summary>Note</summary>
+  <p>This is an EXTRA method provided as an example. Modify or
+replace it with your actual temperature measurement logic.</p>
+</details>
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>APP\Kits\#BlankKit.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span>
+<span class="normal">180</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span>
+<span class="normal">191</span>
+<span class="normal">192</span>
+<span class="normal">193</span>
+<span class="normal">194</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">get_temp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ID</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Get temperature measurement for a sensor (example implementation).</span>
+
+<span class="sd">    This is an example method showing how to acquire and process</span>
+<span class="sd">    temperature measurements. It generates simulated temperature data</span>
+<span class="sd">    using random values.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        ID (int): Sensor identifier</span>
+
+<span class="sd">    Note:</span>
+<span class="sd">        This is an EXTRA method provided as an example. Modify or</span>
+<span class="sd">        replace it with your actual temperature measurement logic.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">temp</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span><span class="o">/</span><span class="mi">100</span> <span class="o">+</span> <span class="mf">298.15</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">temp</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">unitMemory</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Unit</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span><span class="o">.</span><span class="n">currentText</span><span class="p">()))</span>    <span class="c1"># NOTE the &#39;+&#39; here to add the value to the unit. (Conversion of temperature is usually made by addition).</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">Graph</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span><span class="o">.</span><span class="n">setTitle</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">graphTitle</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%.3f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">round</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="n">ID</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="mi">3</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">Unit</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span><span class="o">.</span><span class="n">currentText</span><span class="p">(),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>    <span class="c1"># To actualize the graph title with the last value plotted.</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="APP.Kits.#BlankKit.KitWindow.manualSetGPIO" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">manualSetGPIO</span><span class="p">(</span><span class="n">i</span><span class="p">)</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Manually set the state of a GPIO pin.</p>
+<p>This method allows manual control of GPIO pins through the UI.
+It sets the GPIO state based on the corresponding button state.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>i</code>
+            </td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>GPIO identifier/pin number</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<details class="note" open>
+  <summary>Note</summary>
+  <p>If you don't have any GPIO in your system, and set self.GPIOsNumber to 0,
+you can safely remove this method.</p>
+</details>
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>APP\Kits\#BlankKit.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">197</span>
+<span class="normal">198</span>
+<span class="normal">199</span>
+<span class="normal">200</span>
+<span class="normal">201</span>
+<span class="normal">202</span>
+<span class="normal">203</span>
+<span class="normal">204</span>
+<span class="normal">205</span>
+<span class="normal">206</span>
+<span class="normal">207</span>
+<span class="normal">208</span>
+<span class="normal">209</span>
+<span class="normal">210</span>
+<span class="normal">211</span>
+<span class="normal">212</span>
+<span class="normal">213</span>
+<span class="normal">214</span>
+<span class="normal">215</span>
+<span class="normal">216</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">manualSetGPIO</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Manually set the state of a GPIO pin.</span>
+
+<span class="sd">    This method allows manual control of GPIO pins through the UI.</span>
+<span class="sd">    It sets the GPIO state based on the corresponding button state.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        i (int): GPIO identifier/pin number</span>
+
+<span class="sd">    Note:</span>
+<span class="sd">        If you don&#39;t have any GPIO in your system, and set self.GPIOsNumber to 0,</span>
+<span class="sd">        you can safely remove this method.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sender</span><span class="p">()</span><span class="o">.</span><span class="n">objectName</span><span class="p">())</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">applyGPIO</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="c1"># Here, you may set the state of GPIO with identifier &#39;i&#39; to the value of &quot;self.outputManualSetButton[i].isChecked()&quot; which is boolean.</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">checkGPIOstate</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="APP.Kits.#BlankKit.KitWindow.writeMeasurements" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">writeMeasurements</span><span class="p">(</span><span class="n">pos</span><span class="p">)</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Write measurements to the opened file.</p>
+<p>This method writes a line of measurements from all sensors to the
+currently opened data file. Measurements are written with their
+default unit values.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>pos</code>
+            </td>
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Position/index of the measurement to write</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<details class="note" open>
+  <summary>Note</summary>
+  <p>The measurements are written with the default unit value (first unit
+in each self.unitMemory[i] dictionary).</p>
+</details>
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>APP\Kits\#BlankKit.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">241</span>
+<span class="normal">242</span>
+<span class="normal">243</span>
+<span class="normal">244</span>
+<span class="normal">245</span>
+<span class="normal">246</span>
+<span class="normal">247</span>
+<span class="normal">248</span>
+<span class="normal">249</span>
+<span class="normal">250</span>
+<span class="normal">251</span>
+<span class="normal">252</span>
+<span class="normal">253</span>
+<span class="normal">254</span>
+<span class="normal">255</span>
+<span class="normal">256</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">writeMeasurements</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pos</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Write measurements to the opened file.</span>
+
+<span class="sd">    This method writes a line of measurements from all sensors to the</span>
+<span class="sd">    currently opened data file. Measurements are written with their</span>
+<span class="sd">    default unit values.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        pos (int): Position/index of the measurement to write</span>
+
+<span class="sd">    Note:</span>
+<span class="sd">        The measurements are written with the default unit value (first unit</span>
+<span class="sd">        in each self.unitMemory[i] dictionary).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">time</span><span class="p">[</span><span class="n">pos</span><span class="p">])</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\t\t</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">pos</span><span class="p">]</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">unitMemory</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Unit</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">currentText</span><span class="p">()))</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\t\t</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">pos</span><span class="p">]</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">unitMemory</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Unit</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">currentText</span><span class="p">()))</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="APP.Kits.#BlankKit.deviceConnection" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">deviceConnection</span><span class="p">()</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Check if the system is properly connected to the computer.</p>
+<p>This function verifies that the hardware kit is properly connected
+and accessible. It should be implemented with kit-specific connection
+checking logic.</p>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+<th>Name</th>          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+<td><code>bool</code></td>            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>True if system is connected properly, False otherwise</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<details class="note" open>
+  <summary>Note</summary>
+  <p>Replace system.isConnected() with your actual connection checking method.
+If connection fails, it displays a dialog (0x04) to inform the user.</p>
+</details>
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>APP\Kits\#BlankKit.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">261</span>
+<span class="normal">262</span>
+<span class="normal">263</span>
+<span class="normal">264</span>
+<span class="normal">265</span>
+<span class="normal">266</span>
+<span class="normal">267</span>
+<span class="normal">268</span>
+<span class="normal">269</span>
+<span class="normal">270</span>
+<span class="normal">271</span>
+<span class="normal">272</span>
+<span class="normal">273</span>
+<span class="normal">274</span>
+<span class="normal">275</span>
+<span class="normal">276</span>
+<span class="normal">277</span>
+<span class="normal">278</span>
+<span class="normal">279</span>
+<span class="normal">280</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">deviceConnection</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Check if the system is properly connected to the computer.</span>
+
+<span class="sd">    This function verifies that the hardware kit is properly connected</span>
+<span class="sd">    and accessible. It should be implemented with kit-specific connection</span>
+<span class="sd">    checking logic.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        bool: True if system is connected properly, False otherwise</span>
+
+<span class="sd">    Note:</span>
+<span class="sd">        Replace system.isConnected() with your actual connection checking method.</span>
+<span class="sd">        If connection fails, it displays a dialog (0x04) to inform the user.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">system</span><span class="o">.</span><span class="n">isConnected</span><span class="p">():</span>    <span class="c1"># HERE, you should replace system.isConnected() by your method checking if the system is properly connected.</span>
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">Dialog</span><span class="p">(</span><span class="mh">0x04</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">False</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+          <div class="md-top" data-md-component="top" hidden>
+  <div class="md-top__center">
+    <button type="button" class="md-top__button md-top__button--main" data-md-action="top">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+      <span>Back to top</span>
+    </button>
+    
+      
+      
+      <label class="md-top__button md-top__side md-top__side--nav" for="__drawer" >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-panel-left" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 3v18"/></svg>
+      </label>
+    
+    
+      
+      
+      <label class="md-top__button md-top__side md-top__side--toc" for="__toc" >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-panel-right" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M15 3v18"/></svg>
+      </label>
+    
+  </div>
+</div>
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://jaywhj.github.io/mkdocs-materialx/" target="_blank" rel="noopener">
+      MaterialX
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "code": null, "features": [], "search": null, "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "code.collapse": "Collapse", "code.download": "Download", "code.expand": "Expand remaining # lines", "code.select": "Toggle line selection", "search.offline": "Switch to Lunr for offline search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.19ace10b.min.js"></script>
+      
+    
+  </body>
+</html>
