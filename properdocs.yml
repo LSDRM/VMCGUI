@@ -1,0 +1,31 @@
+site_name: VMCGUI Docs
+
+markdown_extensions:
+  - admonition
+
+plugins:
+  - mkdocstrings:
+      enabled: !ENV [ENABLE_MKDOCSTRINGS, true]
+      default_handler: python
+  - section-index
+
+nav:
+  - Home: index.md
+  - Getting started: getting-started.md
+  - Tutorials:
+      - tutorials/tutorials.md
+      - Make a custom kit: tutorials/make-a-kit.md
+  - How-To Guides:
+      - how-to-guides.md
+  - Reference:
+      - reference/reference.md
+      - Kits: reference/kits.md
+      - GUI: reference/vmcgui.md
+  - Explanations:
+      - explanations/explanations.md
+      - Understanding kit structure: explanations/kit-structure.md
+      - Mandatory attributes & methods: explanations/mandatories.md
+  - Contributing: contributing.md
+
+theme:
+  name: "materialx"
