@@ -123,3 +123,11 @@ For now, VMCGUI has been developped under Windows 10, and has not been tested on
 - scipy 1.10.1
 - PyQt5 5.15.9
 - PyQtWebEngine 5.15.6
+
+----------
+Next steps
+----------
+
+- [ ] Create documentation : [Work in progress](https://github.com/LSDRM/VMCGUI/tree/dev-docs)
+- [ ] Fix Windows 11 bug with ftd2xx.dll
+- [ ] Move to pyftdi Python library instead of ftd2xx
